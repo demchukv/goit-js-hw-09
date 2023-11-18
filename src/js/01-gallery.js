@@ -67,7 +67,7 @@ const images = [
   },
 ];
 
-const gallery = document.querySelector(".gallery");
+const galleryContainer = document.querySelector(".gallery");
 
 let galleryData = '';
 images.forEach(image => {
@@ -78,5 +78,14 @@ images.forEach(image => {
             </a>
         </li>`;
 });
-gallery.insertAdjacentHTML("afterbegin", galleryData);
+galleryContainer.insertAdjacentHTML("afterbegin", galleryData);
 
+const gallery = new SimpleLightbox('.gallery a', {
+    overlayOpacity: 0.8,
+    captions: true,
+    captionSelector: 'img',
+    captionType: 'attr',
+    captionsData: 'alt',
+    captionPosition: 'bottom',
+    captionDelay: 250,
+});
