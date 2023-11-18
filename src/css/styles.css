@@ -31,3 +31,12 @@ html {
   height: 100%;
   object-fit: cover;
 }
+
+.sl-overlay {
+  background: #2e2f42;
+}
+.sl-wrapper .sl-close,
+.sl-wrapper .sl-counter,
+.sl-wrapper .sl-navigation button {
+  color: #fff;
+}
