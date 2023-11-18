@@ -10,6 +10,8 @@
 html {
   box-sizing: border-box;
 }
+
+/* Gallery styles */
 .gallery {
   display: flex;
   flex-wrap: wrap;
@@ -20,6 +22,7 @@ html {
   list-style: none;
   padding-left: 0;
   margin: 0 auto;
+  margin-bottom: 40px;
   max-width: 1128px;
 }
 .gallery-item {
@@ -39,4 +42,61 @@ html {
 .sl-wrapper .sl-counter,
 .sl-wrapper .sl-navigation button {
   color: #fff;
+}
+
+/* Feedback form styles */
+.feedback-form {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin: 0 auto;
+  margin-bottom: 40px;
+  max-width: 360px;
+}
+.feedback-form label {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  color: #2e2f42;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.5; /* 150% */
+  letter-spacing: 0.64px;
+}
+.feedback-form input,
+.feedback-form textarea {
+  max-width: 360px;
+  padding: 8px 16px;
+  border-radius: 4px;
+  border: 1px solid #808080;
+  outline: none;
+  color: #2e2f42;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.5; /* 150% */
+  letter-spacing: 0.64px;
+}
+.feedback-form input:hover,
+.feedback-form textarea:hover {
+  border: 1px solid #000;
+}
+.feedback-form button {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  padding: 8px 16px;
+  border-radius: 8px;
+  background-color: #4e75ff;
+  color: #fff;
+  cursor: pointer;
+  border: none;
+  outline: none;
+  width: min-content;
+  margin-top: 8px;
+}
+
+.feedback-form button:hover,
+.feedback-form button:focus,
+.feedback-form button:active {
+  background-color: #6c8cff;
 }
