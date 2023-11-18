@@ -3,5 +3,5 @@ import{S as c}from"./assets/vendor-3b6544c1.js";(function(){const i=document.cre
             <a class="gallery-link" href="${t.original}">
                 <img class="gallery-image" src="${t.preview}" alt="${t.description}" />
             </a>
-        </li>`});l.insertAdjacentHTML("afterbegin",n);new c(".gallery a",{overlayOpacity:.8,captions:!0,captionSelector:"img",captionType:"attr",captionsData:"alt",captionPosition:"bottom",captionDelay:250});
+        </li>`});l.insertAdjacentHTML("afterbegin",n);new c(".gallery a",{overlayOpacity:.8,captionsData:"alt",captionDelay:250});
 //# sourceMappingURL=commonHelpers.js.map
