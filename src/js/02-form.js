@@ -26,6 +26,6 @@ form.addEventListener("submit", (event) => {
         localStorage.removeItem(localStorageKey);
         form.reset();
     } else {
-        console.error("Please, fill all fields!");
+        alert("Please, fill all fields!");
     }
 });
